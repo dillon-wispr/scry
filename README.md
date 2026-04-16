@@ -29,25 +29,21 @@ ZSH_THEME="scry"
 
 Restart your shell or `source ~/.zshrc`.
 
-### Manual
+### Manual (no Oh My Zsh)
 
 ```bash
 git clone https://github.com/dillon-wispr/scry ~/.scry
 ```
 
-Copy or symlink the theme file into your Oh My Zsh custom themes directory:
-
-```bash
-ln -s ~/.scry/scry.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/scry.zsh-theme
-```
-
-Set the theme in `~/.zshrc`:
+Add to your `~/.zshrc`:
 
 ```zsh
-ZSH_THEME="scry"
+source ~/.scry/scry.zsh-theme
 ```
 
 Restart your shell or `source ~/.zshrc`.
+
+The theme is self-contained — it defines its own color variables if oh-my-zsh is not present.
 
 ## Customize
 

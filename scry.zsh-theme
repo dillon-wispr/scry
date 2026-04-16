@@ -7,10 +7,21 @@
 # The wt:() segment only appears inside a git linked worktree.
 # The ~ suffix on git:() indicates a dirty working tree.
 
+# ── Color definitions (self-contained fallback if oh-my-zsh is not present) ───
+if [[ -z "${fg[red]}" ]]; then
+  setopt PROMPT_SUBST
+  typeset -A fg
+  fg[red]=$'\e[31m' fg[green]=$'\e[32m' fg[yellow]=$'\e[33m'
+  fg[blue]=$'\e[34m' fg[magenta]=$'\e[35m' fg[cyan]=$'\e[36m'
+  fg[white]=$'\e[37m' fg[black]=$'\e[30m'
+  reset_color=$'\e[0m'
+fi
+# ─────────────────────────────────────────────────────────────────────────────
+
 # ── Semantic color tokens ─────────────────────────────────────────────────────
 local c_primary="magenta"  # directory, worktree name, branch name
 local c_secondary="white"  # git:/wt: labels, parens, diamond
-local c_tertiary="yellow"  # dirty indicator ✗
+local c_tertiary="yellow"  # dirty indicator ~
 # ─────────────────────────────────────────────────────────────────────────────
 
 function custom_git_prompt() {
