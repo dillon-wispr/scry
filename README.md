@@ -1,6 +1,8 @@
 # scry
 
-A personal Oh My Zsh theme based on [robbyrussell](https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/robbyrussell.zsh-theme) by Robbie Russell. Colors have been tuned and a git worktree indicator has been added.
+A personal [Oh My Zsh](https://ohmyzsh.sh) theme based on [robbyrussell](https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/robbyrussell.zsh-theme) by Robbie Russell. Colors have been tuned and a git worktree indicator has been added.
+
+> scry is designed for Oh My Zsh but is just a `PROMPT` string under the hood — it works in any zsh setup. See [Manual install](#manual-no-oh-my-zsh) below.
 
 ## Prompt
 
