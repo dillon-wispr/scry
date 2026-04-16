@@ -41,8 +41,28 @@ local c_tertiary="yellow"  # dirty indicator ~
 
 Any named zsh color works: `red`, `blue`, `green`, `cyan`, `magenta`, `yellow`, `white`, `black`.
 
+### Manual
+
+```bash
+git clone https://github.com/dillon-wispr/dillon-zsh-theme ~/.dillon-zsh-theme
+```
+
+Copy or symlink the theme file into your Oh My Zsh custom themes directory:
+
+```bash
+ln -s ~/.dillon-zsh-theme/dillon.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/dillon.zsh-theme
+```
+
+Set the theme in `~/.zshrc`:
+
+```zsh
+ZSH_THEME="dillon"
+```
+
+Restart your shell or `source ~/.zshrc`.
+
 ## Update
 
 ```bash
-cd ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/dillon-zsh-theme && git pull
+cd ~/.dillon-zsh-theme && git pull
 ```
