@@ -1,4 +1,4 @@
-# dillon — personal zsh theme
+# scry — personal zsh theme
 # Originally based on robbyrussell by Robbie Russell (https://github.com/robbyrussell/oh-my-zsh)
 # Colors have been changed and a git worktree indicator has been added.
 # Loaded from $ZSH_CUSTOM/themes/ (takes priority over $ZSH/themes/)

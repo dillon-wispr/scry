@@ -1,4 +1,4 @@
-# dillon
+# scry
 
 A personal Oh My Zsh theme based on [robbyrussell](https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/robbyrussell.zsh-theme) by Robbie Russell. Colors have been tuned and a git worktree indicator has been added.
 
@@ -17,21 +17,41 @@ A personal Oh My Zsh theme based on [robbyrussell](https://github.com/ohmyzsh/oh
 ### Oh My Zsh
 
 ```bash
-git clone https://github.com/dillon-wispr/dillon-zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/dillon-zsh-theme
-ln -s ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/dillon-zsh-theme/dillon.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/dillon.zsh-theme
+git clone https://github.com/dillon-wispr/scry ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/scry
+ln -s ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/scry/scry.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/scry.zsh-theme
 ```
 
 Set the theme in `~/.zshrc`:
 
 ```zsh
-ZSH_THEME="dillon"
+ZSH_THEME="scry"
+```
+
+Restart your shell or `source ~/.zshrc`.
+
+### Manual
+
+```bash
+git clone https://github.com/dillon-wispr/scry ~/.scry
+```
+
+Copy or symlink the theme file into your Oh My Zsh custom themes directory:
+
+```bash
+ln -s ~/.scry/scry.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/scry.zsh-theme
+```
+
+Set the theme in `~/.zshrc`:
+
+```zsh
+ZSH_THEME="scry"
 ```
 
 Restart your shell or `source ~/.zshrc`.
 
 ## Customize
 
-Open `dillon.zsh-theme` and edit the three color tokens near the top:
+Open `scry.zsh-theme` and edit the three color tokens near the top:
 
 ```zsh
 local c_primary="magenta"  # directory, worktree name, branch name
@@ -41,28 +61,8 @@ local c_tertiary="yellow"  # dirty indicator ~
 
 Any named zsh color works: `red`, `blue`, `green`, `cyan`, `magenta`, `yellow`, `white`, `black`.
 
-### Manual
-
-```bash
-git clone https://github.com/dillon-wispr/dillon-zsh-theme ~/.dillon-zsh-theme
-```
-
-Copy or symlink the theme file into your Oh My Zsh custom themes directory:
-
-```bash
-ln -s ~/.dillon-zsh-theme/dillon.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/dillon.zsh-theme
-```
-
-Set the theme in `~/.zshrc`:
-
-```zsh
-ZSH_THEME="dillon"
-```
-
-Restart your shell or `source ~/.zshrc`.
-
 ## Update
 
 ```bash
-cd ~/.dillon-zsh-theme && git pull
+cd ~/.scry && git pull
 ```
